@@ -1,0 +1,36 @@
+.leading-categories-container{
+    width: 100%;
+    height: fit-content;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem 0;
+    margin-bottom: 1rem;
+    overflow-x: scroll;
+    .leading-category{
+        background-color: blue;
+        width: 70px;
+        height: 70px;
+    }
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (min-width: 880px){
+    .leading-categories-container{
+        width: 100%;
+        height: fit-content;
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2rem 0;
+        margin-bottom: 1rem;
+        overflow-x: scroll;
+        .leading-category{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+    }
+}

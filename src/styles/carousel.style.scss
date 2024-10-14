@@ -1,6 +1,7 @@
 .carousel{
-    height: 200px;
+    height: 250px;
     position: relative;
+    padding-bottom: 1rem;
     .imageContainer{
         width: 100vw;
         height: 200px; 
@@ -8,19 +9,15 @@
         align-items: center;
         overflow: hidden;
         border-radius: 20px;
+        transition: box-shadow 0.3s ease;
         img{
             width: 100%;
             height: auto;
         }
+        &:hover{
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
     }
-    // .swiper-horizontal > .swiper-pagination-bullets{
-    // .swiper-pagination-bullets.swiper-pagination-horizontal{
-    //     position: absolute;
-    //     bottom: 10px;
-    //     right: 10px;
-    //     width: auto;
-    //     z-index: 10;
-    // }
     .swiper-pagination{
         width: auto !important;
         left: auto !important;
