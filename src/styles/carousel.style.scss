@@ -1,0 +1,46 @@
+.carousel{
+    height: 200px;
+    position: relative;
+    .imageContainer{
+        width: 100vw;
+        height: 200px; 
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 20px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    // .swiper-horizontal > .swiper-pagination-bullets{
+    // .swiper-pagination-bullets.swiper-pagination-horizontal{
+    //     position: absolute;
+    //     bottom: 10px;
+    //     right: 10px;
+    //     width: auto;
+    //     z-index: 10;
+    // }
+    .swiper-pagination{
+        width: auto !important;
+        left: auto !important;
+        right: 10px;
+        --swiper-pagination-bottom: 60px; /* Adjust bottom position */
+        --swiper-pagination-right: 60px; /* Remove top position if needed */
+    }
+    .swiper-pagination-bullet {
+        background-color: white;
+        opacity: 0.5;
+        border: 1px solid #ff7100;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #ff7100;
+        opacity: 1;
+    } 
+}
+
+@media (min-width: 880px){
+    .carousel{
+        height: 250px;
+    }
+}
