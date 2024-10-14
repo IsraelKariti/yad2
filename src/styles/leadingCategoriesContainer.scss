@@ -1,16 +1,41 @@
 .leading-categories-container{
-    width: 100%;
-    height: fit-content;
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
-    padding: 0 2rem 0;
+    width: 100%;
+    height: fit-content;
     margin-bottom: 1rem;
+    padding: 0 2rem 0;
     overflow-x: scroll;
+
     .leading-category{
-        background-color: blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 70px;
-        height: 70px;
+        height: 130px;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        cursor: pointer;
+
+        .leading-category-image-container{
+            background-color: rgb(236, 236, 236);
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            border: 1px solid rgb(236, 236, 236);
+            transition: 0.3s background-color ease;
+            .leading-category-image{
+                width: 70px;
+                height: 70px;
+            }
+            &:hover{
+                border: 1px solid rgb(197, 196, 196);
+                background-color: rgb(250, 250, 250);
+            }
+        }
+        .leading-category-title{
+            text-align: center;
+        }
     }
     &::-webkit-scrollbar {
         display: none;
@@ -20,17 +45,29 @@
 @media (min-width: 880px){
     .leading-categories-container{
         width: 100%;
-        height: fit-content;
-        border: 1px solid red;
+        height: 200px;
         display: flex;
         justify-content: space-between;
         padding: 0 2rem 0;
         margin-bottom: 1rem;
         overflow-x: scroll;
+        
         .leading-category{
-            background-color: blue;
-            width: 100px;
-            height: 100px;
+            width: 140px;
+            height: 170px;
+            .leading-category-image-container{
+                background-color: rgb(236, 236, 236);
+                border-radius: 50%;
+                width: 140px;
+                height: 140px;
+                .leading-category-image{
+                    width: 140px;
+                    height: 140px;
+                }
+            }
+            .leading-category-title{
+                text-align: center;
+            }
         }
     }
 }
