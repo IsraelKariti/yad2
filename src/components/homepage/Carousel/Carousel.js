@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import '../../../styles/carousel.style.scss';
 import { CarouselImg } from './CarouselImg';
 import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import '../../../styles/carousel.style.scss';
 import 'swiper/scss/pagination';
 
 export const Carousel = ()=>{
