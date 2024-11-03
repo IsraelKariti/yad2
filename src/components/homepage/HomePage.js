@@ -3,6 +3,7 @@ import { LeadingCategoriesContainer } from "./LeadingCategories/LeadingCategorie
 import { NewInYourArea } from "./NewInYourArea/NewInYourArea";
 import { ComeWork } from "./ComeWork/ComeWork";
 import { PopularServices } from "./PopularServices/PopularServices";
+import { SearchesToNotMiss } from "./SearchesToNotMiss/SearchesToNotMiss";
 
 export const HomePage = ()=>{
     return <div>
@@ -11,5 +12,6 @@ export const HomePage = ()=>{
         <NewInYourArea/>
         <ComeWork/>
         <PopularServices/>
+        <SearchesToNotMiss/>
     </div>
 }
