@@ -1,0 +1,23 @@
+.comeWork{
+    .comeWorkNarrow{
+        height: 100px;
+        width: 100%;
+        visibility: visible;
+    }
+    .comeWorkWide{
+        visibility: hidden;
+        height: 160px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 880px){
+.comeWork{
+    .comeWorkNarrow{
+        visibility: hidden;
+    }
+    .comeWorkWide{
+        visibility: visible;
+    }
+}
+}
