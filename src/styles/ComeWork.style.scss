@@ -1,11 +1,12 @@
 .comeWork{
+    margin-bottom: 1rem;
     .comeWorkNarrow{
         height: 100px;
         width: 100%;
-        visibility: visible;
+        display: block;
     }
     .comeWorkWide{
-        visibility: hidden;
+        display: none;
         height: 160px;
         width: 100%;
     }
@@ -14,10 +15,10 @@
 @media (min-width: 880px){
 .comeWork{
     .comeWorkNarrow{
-        visibility: hidden;
+        display: none;
     }
     .comeWorkWide{
-        visibility: visible;
+        display: block;
     }
 }
 }
