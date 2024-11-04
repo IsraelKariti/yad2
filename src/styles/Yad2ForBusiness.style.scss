@@ -37,6 +37,8 @@
         flex-direction: row-reverse;
         align-items: center;
         padding: 1.5rem;
+        max-width: 1000px;
+        margin: auto;
         .Yad2ForBusinessTitle{
             display: flex;
             justify-content: center;
@@ -51,9 +53,24 @@
             flex: 1;
             .ForBusinessOption{
                 flex-grow: 1;
+                max-width: 250px;
                 p{
                     width: 100%;
                     text-align: end;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .Yad2ForBusiness{
+        .Yad2ForBusinessTitle{
+        }
+        .Yad2ForBusinessContainer{
+            .ForBusinessOption{
+                p{
                 }
             }
         }
